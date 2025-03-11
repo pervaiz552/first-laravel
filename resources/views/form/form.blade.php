@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="{{ route('form') }}" method="post">
         @csrf
     </form>
 </body>
