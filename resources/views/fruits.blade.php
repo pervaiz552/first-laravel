@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>The name of frit is {{ $myfruit }}</h1>
-    
+    <p>Lorem ipsum dolor sit amet.</p>
 </body>
 </html>
