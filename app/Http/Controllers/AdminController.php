@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
    public function service() {
-        return view('admin.service');
+        return view('admin.service', [
+            "my_name" => "Saleem"
+        ]);
     }
     public function about() {
         return view('admin.about');

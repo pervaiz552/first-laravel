@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <x-navbar />
     <h1>Lorem ipsum dolor sit amet. ahmar</h1>
+   
+    <x-my-footer />
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <x-alert1.header />
+    <x-alerts2.sucessfull />
 
 </body>
 </html>
