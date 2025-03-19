@@ -15,4 +15,10 @@ class Simple1Controller extends Controller
     public function indoor_1(){
         return view ('signage.indoor');
     }
+    public function sig_1(){
+        return view ('dashboard.dash_1');
+    }
+    public function sig_2($sign1,$sign2){
+        return "hello " . $sign1 . " how are " . $sign2;
+    }
 }

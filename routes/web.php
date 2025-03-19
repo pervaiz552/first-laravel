@@ -12,6 +12,8 @@ use App\Http\Controllers\RoutingsController;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/sig2/{sign1}/{sign2}',[Simple1Controller::class,"sig_2"])->name('intor_1');
+Route::get('/sig1',[Simple1Controller::class,"sig_1"]);
 Route::get('/blogs', [AdminController::class,"blogs"]);
 Route::get('/dashboard', [AdminController::class,"contact"]);
 Route::get('/admin', [AdminController::class, "about"]);
@@ -30,7 +32,14 @@ Route::get("/contact/{firstname}", [RoutingsController::class, 'simples'])->name
 Route::get("messe/{name1}/{message}",[RoutingsController::class,'messages'])->name('messe.age');
 Route::get('applier/{request1}/{request2}/{request3}',[RoutingsController::class,"requests"])
     ->name('applier.req');
-Route::get('/aply/{apply1}/{apply2}',[RoutingsController::class,'aplier'])->name("loss");    
+Route::get('/aply/{apply1}/{apply2}',[RoutingsController::class,'aplier'])->name("loss");  
+
+ Route::get('/los1',function(){
+    return redirect ()->route('intor_1',[
+        'sabz',
+        'u'
+    ]);
+ });
     Route::get('/los',function(){
         return redirect()->route('loss',[
             'mate',

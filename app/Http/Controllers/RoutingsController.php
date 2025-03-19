@@ -23,6 +23,6 @@ class RoutingsController extends Controller
     return 'Hi'.$request1 . "Where are u:" . $request2 . "How old are u". $request3;
   }
   public function aplier($apply1,$apply2){
-    return 'hello' . $apply1 . "who is there" . $apply2;
+    return 'hello ' . $apply1 . "who is there" . $apply2;
   }
 }
