@@ -7,6 +7,7 @@ use App\Http\Controllers\SimpleController;
 use App\Http\Controllers\RoutingController;
 use App\Http\Controllers\Simple1Controller;
 use App\Http\Controllers\RoutingsController;
+use App\Http\Controllers\Simple2Controller;
 
 
 Route::get('/', function () {
@@ -23,6 +24,7 @@ Route::get('/blog1', [Simple1Controller::class, 'blog1']);
 Route::get('/indoor_1',[Simple1Controller::class, 'indoor_1']);
 Route::get('/dash', [SignssController::class,"signnns"]);
 Route::get('/dash_1', [SignssController::class,"signsquare"]);
+Route::get('/dash_2',[Simple2Controller::class,"blg1"]);
 
 
 Route::get("/blog/{name}", [RoutingController::class, 'simple']);
